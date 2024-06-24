@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram fa-1.5x me-1.5"></i>
+                <h5 class="mb-0 d-inline-block">Instagram</h5>
+            </a>
+
+            <div class="col nav justify-content-end">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Create a new post</button>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa-solid fa-gear"></i>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" type="button">Profile</a></li>
+                        <li><a class="dropdown-item" type="button">Accesibility</a></li>
+                        <li><a class="dropdown-item" type="button">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item alert-link" type="button" style="color: red;">Log out</a></li>
+                    </ul>
+                </button>
+
+                <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <form>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn bg-light" data-bs-dismiss="modal"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn bg-light" data-bs-dismiss="modal"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                </div>
+                            </form>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                            <div>
+                            </div>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                            class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                            class="fa-solid fa-square"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2024/05/canyon-bridge_portada_1400.jpg"
+                            class="img-thumbnail" alt="Puente de madera más largo en BCS,MEX">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://noro.mx/wp-content/uploads/2022/12/The-Canyon-Bridge-el-puente-de-madera-mas-largo-del-mundo-BCS-1-1024x768.jpg"
+                            class="img-thumbnail" alt="Puente de madera más largo en BCS,MEX">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://img.optimalcdn.com/www.posta.com.mx/2024/02/0e4acfed06080e5f4bf3942ec511fc64a1633df1/310909184_6224824597544176_8265903394006149340_n.webp"
+                            class="img-thumbnail" alt="Puente de madera más largo en BCS,MEX">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="https://img.freepik.com/foto-gratis/reflejo-cielo-sobre-idilico-lago_23-2148153692.jpg?t=st=1719054686~exp=1719058286~hmac=f6b0aee176e5adb5bf176989e9c6a9237d74142b6ec3bf24793a623b6f09a52d&w=1060"
+                            class="img-thumbnail" alt="espejo del salar de uyuni">
+                    </div>
+                    <div class="col">
+                        <img src="https://img.freepik.com/foto-gratis/mujer-joven-tomando-foto-hermosa-reflexion-agua_23-2148232286.jpg?t=st=1719054735~exp=1719058335~hmac=bed4ff0b9bd996e7af6c4e5b19d432259a65ef970f437d92174fe9e8d8611151&w=1060"
+                            class="img-thumbnail" alt="espejo del salar de uyuni">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://img.freepik.com/foto-gratis/textura-arena-visible-mar-cristalino-cielo_181624-28568.jpg?t=st=1719055043~exp=1719058643~hmac=12922cbc55593395219be862608ba32e01ffc8a318795bd759ce8880c652b9c7&w=1060"
+                            class="img-thumbnail" alt="espejo del salar de uyuni">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t1.6435-9/56819203_2209447819122736_7855868309667840000_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SnSrBCopMhcQ7kNvgHLGj1-&_nc_ht=scontent.fmad7-1.fna&oh=00_AYD_EqP3bVkKVbeC1xGN3GY-AM4nz91ZG8uTbayD8LRKDw&oe=66A0CB30"
+                            class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/422916654_18323580454143725_8972350513033906516_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LbZMXweYejcQ7kNvgE9WZiT&_nc_ht=scontent.fmad7-1.fna&oh=00_AYB8CmS17oC7gz5yaMbwJLDwp5B6yIXnVzvy9IKVUejH2Q&oe=667F0513"
+                            class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/350109437_277647524820321_8629398942657030911_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GQ6P-gp8cB4Q7kNvgHhR189&_nc_ht=scontent.fmad7-1.fna&oh=00_AYCUrvpzmyGyU-zMYAO3IWUKP6TQr0iegye9Q4H6H7pnJA&oe=667C85BA"
+                            class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+
+                    <div class="card border-dark">
+                        <div class="card-body text-dark">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Espejo del salar de Uyuni, Bolivia</h5>
+                                <p class="card-text">1/9
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <img src="https://img.freepik.com/foto-gratis/reflejo-cielo-sobre-idilico-lago_23-2148153692.jpg?t=st=1719054686~exp=1719058286~hmac=f6b0aee176e5adb5bf176989e9c6a9237d74142b6ec3bf24793a623b6f09a52d&w=1060"
+                                    class="img-thumbnail" alt="espejo del salar de uyuni" width="1070px" height="1070">
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1200 likes</strong> <br> <br> El
+                            salar de Uyuni, en Bolivia, está considerado como una de las vistas más extremas y
+                            destacadas de toda Sudamérica, si no de la Tierra. Con una superficie de 10.582
+                            kilómetros
+                            cuadrados sobre el Altiplano, es el desierto salado más grande del mundo, un producto de
+                            los
+                            lagos prehistóricos que se evaporaron tiempo atrás. Aquí, la corteza de sal se extiende
+                            hacia el horizonte, cubierta de patrones de sal poligonales guateados que se elevan
+                            desde el suelo.</div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Espejo del salar de Uyuni, Bolivia</h5>
+                            <p class="card-text">2/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://img.freepik.com/foto-gratis/mujer-joven-tomando-foto-hermosa-reflexion-agua_23-2148232286.jpg?t=st=1719054735~exp=1719058335~hmac=bed4ff0b9bd996e7af6c4e5b19d432259a65ef970f437d92174fe9e8d8611151&w=1060"
+                                class="img-thumbnail" alt="espejo del salar de uyuni">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>879 likes</strong> <br> <br>
+                            <p>Durante algunas partes del año, los lagos cercanos se desbordan y una fina capa de agua
+                                transforma esta llanura en un hermoso reflejo del cielo. Este precioso terreno de otro
+                                mundo es
+                                un lucrativo yacimiento para extraer sal y litio, elemento utilizado en las baterías de
+                                los
+                                ordenadores, los smartphones y los coches eléctricos. Además de los trabajadores locales
+                                que
+                                recogen estos minerales, este paisaje también alberga el primer hotel de sal del mundo y
+                                es
+                                visitado por turistas que recorren las carreteras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Espejo del salar de Uyuni, Bolivia</h5>
+                            <p class="card-text">3/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://img.freepik.com/foto-gratis/textura-arena-visible-mar-cristalino-cielo_181624-28568.jpg?t=st=1719055043~exp=1719058643~hmac=12922cbc55593395219be862608ba32e01ffc8a318795bd759ce8880c652b9c7&w=1060"
+                                class="img-thumbnail" alt="espejo del salar de uyuni">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>879 likes</strong> <br> <br>
+                            <p>Visitar la belleza cruda y desolada del salar de Uyuni puede suponer una experiencia
+                                increíble o
+                                una pesadilla logística.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Puente de madera más largo en Jalisco, México</h5>
+                            <p class="card-text">4/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2024/05/canyon-bridge_portada_1400.jpg"
+                                class="img-thumbnail" alt="Puente de madera más largo en Jalisco,MEX">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1971 likes</strong> <br> <br>
+                            <p>odo ese cúmulo de emociones pueden ser vividas en Puerto Vallarta, Jalisco. El lugar
+                                donde
+                                yace se llama Canopy River, un complejo ecoturístico ubicado en la Sierra Madre
+                                Occidental y
+                                que
+                                fue fundado por 35 socios del Ejido el Jorullo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Puente de madera más largo en Jalisco, México</h5>
+                            <p class="card-text">5/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://noro.mx/wp-content/uploads/2022/12/The-Canyon-Bridge-el-puente-de-madera-mas-largo-del-mundo-BCS-1-1024x768.jpg"
+                                class="img-thumbnail" alt="Puente de madera más largo en BCS,MEX" width="1070px"
+                                height="1070px">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1971 likes</strong> <br> <br>
+                            <p>La estructura mide 470 metros de largo y se encuentra elevado a 150 metros del suelo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Puente de madera más largo en Jalisco, México</h5>
+                            <p class="card-text">6/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://img.optimalcdn.com/www.posta.com.mx/2024/02/0e4acfed06080e5f4bf3942ec511fc64a1633df1/310909184_6224824597544176_8265903394006149340_n.webp"
+                                class="img-thumbnail" alt="Puente de madera más largo en BCS,MEX" width="1070px"
+                                height="1070px">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>983 likes</strong> <br> <br>
+                            <p>Para mejorar la experiencia y la posibilidad de encontrar las mejores imágenes
+                                panorámicas,
+                                Canopy River comenzó a construir en 2015 el puente vehicular colgante más largo del
+                                mundo.
+                                Atravesar el puente es de lo más emocionante, ya sea a pie, cuatrimoto o vehículo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Centro vacacional "El Salto" Guanajuato, México</h5>
+                            <p class="card-text">7/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t1.6435-9/56819203_2209447819122736_7855868309667840000_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SnSrBCopMhcQ7kNvgHLGj1-&_nc_ht=scontent.fmad7-1.fna&oh=00_AYD_EqP3bVkKVbeC1xGN3GY-AM4nz91ZG8uTbayD8LRKDw&oe=66A0CB30"
+                                class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1247 likes</strong> <br> <br>
+                            <p> 28 km de Mineral de Pozos, en Tierra Blanca, Guanajuato, encontrarás el centro
+                                vacacional
+                                El
+                                Salto donde es posible volar en parapente, practicar rapel y escalar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Centro vacacional "El Salto" Guanajuato, México</h5>
+                            <p class="card-text">8/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/422916654_18323580454143725_8972350513033906516_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LbZMXweYejcQ7kNvgE9WZiT&_nc_ht=scontent.fmad7-1.fna&oh=00_AYB8CmS17oC7gz5yaMbwJLDwp5B6yIXnVzvy9IKVUejH2Q&oe=667F0513"
+                                class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1158 likes</strong> <br> <br>
+                            <p>Estas hamacas son uno de sus atractivos principales, el Sky Dream, pues a pesar de que
+                                puedas
+                                tener temor a las alturas o simplemente sentir nervios al hacerlo, la recompensa de
+                                poder
+                                tomar
+                                una siesta a esa altura o apreciar el hermoso cielo estrellado, vale la pena. Con la
+                                ayuda
+                                de un
+                                experto, quedarás suspendido en un cable de tirolesa, a una altura de 6 a 8 metros. No
+                                es
+                                una
+                                altura considerable, pero por la montaña la sensación es distinta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark">
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Centro vacacional "El Salto" Guanajuato, México</h5>
+                            <p class="card-text">9/9
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/350109437_277647524820321_8629398942657030911_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GQ6P-gp8cB4Q7kNvgHhR189&_nc_ht=scontent.fmad7-1.fna&oh=00_AYCUrvpzmyGyU-zMYAO3IWUKP6TQr0iegye9Q4H6H7pnJA&oe=667C85BA"
+                                class="img-thumbnail" alt="Centro vacional El Salto en GTO, MEX">
+                        </div>
+                        <div class="card-footer bg-transparent border-dark"> <strong>1158 likes</strong> <br> <br>
+                            <p>demás de la experiencia en la hamaca del Sky Dream, podrás realizar rapel en cualquiera
+                                de
+                                las
+                                tres paredes, de 8, 20 o 50 metros. El lugar también permite realizar senderismo,
+                                escalada,
+                                ciclismo de montaña, paseos en cuatrimoto y tirolesa.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
